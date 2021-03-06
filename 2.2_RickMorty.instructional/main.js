@@ -18,3 +18,25 @@
 */
 
 //NOTE: Write your code below and push back to your github branch.  SUBMIT YOUR GITHUB URL IN CANVAS
+
+
+//I have no idea what I'm doing yet do just pushing what I have so far based on notes. I haven't been able to finish all of the Week 4 notes/modules so I'm going back hoping that more information is in there on how to do these challenges. Or I will be waiting for class on Tuesday and/or researching more information on my own to learn how to do this. 
+
+const baseURL = 'https://rickandmortyapi.com/api/character'; 
+
+fetch('https://rickandmortyapi.com/api/character')
+  .then(response => response.json())
+  .then(data => console.log(data))
+//   console.log(results[0].image)
+
+// function fetchData (d){ 
+//     // e.preventDefault(); 
+//     fetch(baseURL)c
+//     .then(result => result.json()) 
+//     // .then(json => { 
+//     //     console.log(json);
+//     //     rickAndMorty(json)
+//     // })
+// }
+
+// fetchData();
