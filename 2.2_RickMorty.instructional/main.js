@@ -20,23 +20,48 @@
 //NOTE: Write your code below and push back to your github branch.  SUBMIT YOUR GITHUB URL IN CANVAS
 
 
-//I have no idea what I'm doing yet do just pushing what I have so far based on notes. I haven't been able to finish all of the Week 4 notes/modules so I'm going back hoping that more information is in there on how to do these challenges. Or I will be waiting for class on Tuesday and/or researching more information on my own to learn how to do this. 
+//I still have no clue how to do this and would like more instruction on these...but I was able to drill down and find the url images at least. 
 
 const baseURL = 'https://rickandmortyapi.com/api/character'; 
 
-fetch('https://rickandmortyapi.com/api/character')
+let imageOne = document.querySelector('imageOne');
+let imageTwo = document.querySelector('imageTwo');
+
+
+
+fetch(baseURL)
   .then(response => response.json())
-  .then(data => console.log(data))
-//   console.log(results[0].image)
+  .then(json => {
+    console.log(json)
+    console.log(json.results)
+    console.log(json.results[0].image)
+    console.log(json.results[1].image)})
+    
+//     // data.forEach(item => {
+//     //   imageOne = `<img src="${item.results[0].image}"/>`
+//     //   $(#result).append(imageOne);
+    
+//     // });
 
-// function fetchData (d){ 
-//     // e.preventDefault(); 
-//     fetch(baseURL)c
-//     .then(result => result.json()) 
-//     // .then(json => { 
-//     //     console.log(json);
-//     //     rickAndMorty(json)
-//     // })
-// }
 
-// fetchData();
+// ????? no clue??? ////
+
+
+
+function displayImages() {
+  console.log(json.results[0].image); 
+
+  let img = document.getElementById('imageOne');
+  img.src = json.results[0].image;
+  document.getElementById('imageOne').appendChild(img);
+  // imageOne.getElementById('imageOne').appendChild(imageOne); 
+   
+  // image.appendChild(imageOne);
+  // imageOne.appendChild('img');
+
+}
+
+
+
+
+
